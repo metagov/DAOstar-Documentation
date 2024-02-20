@@ -1,0 +1,8 @@
+{
+  "label": "Publications",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "List of all Standards being worked on"
+  }
+}
