@@ -8,6 +8,8 @@ type:
 category: 
 author: George Beall <george@commonwealth.im>, Ivan Fartunov <ivan@aragon.org>, Rolf Hoefer <rolf.l.hoefer@gmail.com>, Alex Poon <alex.poon@charmverse.io>, and Joshua Tan <josh@metagov.org>, 
 created: 2023-02-03
+sidebar_position: 4
+
 ---
 
 ## Abstract

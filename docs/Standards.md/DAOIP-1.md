@@ -34,4 +34,4 @@ This document was derived heavily from [Ethereum's EIP-1](https://github.com/eth
 
 ## Copyright
 
-Copyright and related rights waived via [CC0](../LICENSE.md).
+Copyright and related rights waived via CC0.

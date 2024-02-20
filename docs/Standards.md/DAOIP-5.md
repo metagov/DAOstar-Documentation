@@ -8,6 +8,8 @@ type:
 category: 
 author: Joshua Tan <josh@metagov.org>, Tyler Sullberg <tysullberg@gmail.com>, Eugene Leventhal <eugene@metagov.org>, Kevin Olsen <kevinolsen@gitcoin.co>, Riccardo Lamanna
 created: 2023-11-14
+sidebar_position: 5
+
 ---
 
 # Simple summary
@@ -44,7 +46,7 @@ A grants system represents the top-level governance or administration of a grant
 ```
 
 ## Grant pools
-A grant pool is a smart contract or other fundable object containing funds with the intention of being used to pay out grants. In this specification, a grant pool is defined to be a subtype of a contract in the sense of [DAOIP-2](daoip-2.md). This means that on-chain grant pools MUST publish an id of the form `CAIP10_ADDRESS + "?contractId=" + CONTRACT_COUNTER`, where `CAIP10_ADDRESS` is the CAIP-10 address of the grant system and `CONTRACT_COUNTER` is an arbitrary identifier such as a uint256 counter or a hash that is locally unique per CAIP-10 address. Off-chain grant pools MAY use a similar id format where `CAIP10_ADDRESS` is replaced with an appropriate URI or URL. 
+A grant pool is a smart contract or other fundable object containing funds with the intention of being used to pay out grants. In this specification, a grant pool is defined to be a subtype of a contract in the sense of DAOIP-2. This means that on-chain grant pools MUST publish an id of the form `CAIP10_ADDRESS + "?contractId=" + CONTRACT_COUNTER`, where `CAIP10_ADDRESS` is the CAIP-10 address of the grant system and `CONTRACT_COUNTER` is an arbitrary identifier such as a uint256 counter or a hash that is locally unique per CAIP-10 address. Off-chain grant pools MAY use a similar id format where `CAIP10_ADDRESS` is replaced with an appropriate URI or URL. 
 
 Unless otherwise noted, all fields in the Grant Pool JSON-LD Schema are REQUIRED. In particular, a grant pool MUST publish an `applicationsURI` field, which is described in more detail in the Applications section, below. If a grant system operates multiple grant pools, they MAY add additional elements to the array below.
 
@@ -88,7 +90,7 @@ For efficient indexing, all projects adopting DAOIP-5, even individuals and team
 }
 ```
 
-In this specification, a project is a subtype of a proposal in the sense of [DAOIP-2](DAOIP-2.md). This means that on-chain projects MUST publish an id of the form `CAIP10_ADDRESS + "?proposalId=" + PROPOSAL_COUNTER`, where `CAIP10_ADDRESS` is the CAIP-10 address of the proposing team or individual and `PROPOSAL_COUNTER` is an arbitrary identifier such as a uint256 counter or a hash that is locally unique per CAIP-10 address. Off-chain projects MAY use a similar id format where `CAIP10_ADDRESS` is replaced with an appropriate URI or URL. 
+In this specification, a project is a subtype of a proposal in the sense of DAOIP-2. This means that on-chain projects MUST publish an id of the form `CAIP10_ADDRESS + "?proposalId=" + PROPOSAL_COUNTER`, where `CAIP10_ADDRESS` is the CAIP-10 address of the proposing team or individual and `PROPOSAL_COUNTER` is an arbitrary identifier such as a uint256 counter or a hash that is locally unique per CAIP-10 address. Off-chain projects MAY use a similar id format where `CAIP10_ADDRESS` is replaced with an appropriate URI or URL. 
 
 Unless otherwise noted, all fields in the Projects JSON-LD Schema are REQUIRED.
 

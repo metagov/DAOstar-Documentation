@@ -3,7 +3,6 @@ sidebar_position: 1
 slug: /
 description: DAOstar Docs Intro
 title: Introduction
-
 ---
 # Introduction
 ## Overview

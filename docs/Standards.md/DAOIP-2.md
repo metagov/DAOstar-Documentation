@@ -8,6 +8,8 @@ status: Draft
 type: Standards Track
 category: ERC
 created: 2022-02-17
+sidebar_position: 2
+
 ---
 
 ## Abstract
@@ -16,7 +18,7 @@ An API standard for decentralized autonomous organizations (DAOs), focused on re
 
 ## Motivation
 
-DAOs, since being invoked in the Ethereum whitepaper, have been vaguely defined. This has led to a wide range of patterns but little standardization or interoperability between the frameworks and tools that have emerged. Standardization and interoperability are necessary to support a variety of use-cases. In particular, a standard daoURI, similar to tokenURI in [EIP-721](./eip-721), will enhance DAO discoverability, legibility, proposal simulation, and interoperability between tools. More consistent data across the ecosystem is also a prerequisite for future DAO standards.
+DAOs, since being invoked in the Ethereum whitepaper, have been vaguely defined. This has led to a wide range of patterns but little standardization or interoperability between the frameworks and tools that have emerged. Standardization and interoperability are necessary to support a variety of use-cases. In particular, a standard daoURI, similar to tokenURI in [EIP-721](https://eips.ethereum.org/EIPS/eip-721), will enhance DAO discoverability, legibility, proposal simulation, and interoperability between tools. More consistent data across the ecosystem is also a prerequisite for future DAO standards.
 
 ## Specification
 
@@ -309,4 +311,4 @@ This standard defines the interfaces for the DAO URIs but does not specify the r
 Indexers that rely on the data returned by the URI should take caution if DAOs return executable code from the URIs. This executable code might be intended to get the freshest information on membership, proposals, and activity log, but it could also be used to run unrelated tasks.
 
 ## Copyright
-Copyright and related rights waived via [CC0](../LICENSE.md).
+Copyright and related rights waived via CC0.

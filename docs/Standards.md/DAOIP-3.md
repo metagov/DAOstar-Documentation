@@ -8,6 +8,8 @@ type:
 category:
 author: Fernando Mendes <fernando@mendes.codes>, Joshua Tan <josh@metagov.org>,
 created: 2023-02-03
+sidebar_position: 3
+
 ---
 
 ## Abstract
@@ -22,7 +24,7 @@ Contributions and membership are important building blocks within DAOs and relat
 
 In current DAOs, membership and contributions are commonly defined via ownership of on-chain assets, whether fungible tokens, NFTs, or (more recently) soulbound NFTs. But on-chain definitions miss many important use-cases and risk locking DAOs into very specific modes of membership and organization. For example, a DAO may want to make membership contingent on some (off-chain) measure of participation such as git commits or Discourse posts, while definitions of contributions could vary across each of the (off- and on-chain) services that a DAO uses to track contributions.
 
-[daoURI](daoip-2.md) already allows a DAO to publish off-chain metadata about itself. This standard composes with daoURI in order to specify a permissionless attestation framework so that _service providers and other entities_ can publish information about the DAO and its members. Importantly, it defines an indexing strategy for different entities to publish and search for on- and off-chain data relevant to the members of a DAO. The underlying format of the attestations themselves is designed to be compatible with the [W3C verifiable credential specification](https://w3c.github.io/vc-data-model/).
+[daoURI](docs\Standards.md\DAOIP-2.md) already allows a DAO to publish off-chain metadata about itself. This standard composes with daoURI in order to specify a permissionless attestation framework so that _service providers and other entities_ can publish information about the DAO and its members. Importantly, it defines an indexing strategy for different entities to publish and search for on- and off-chain data relevant to the members of a DAO. The underlying format of the attestations themselves is designed to be compatible with the [W3C verifiable credential specification](https://w3c.github.io/vc-data-model/).
 
 *Note: this standard does* not *specify how DAOs and service providers should handle identity verification & management. We assume that many different identity systems exist in tandem across different DAOs and different service providers. The way these are implemented is left to the discretion of both the DAO and its service providers. Thus, this standard is NOT appropriate for handling personally-identifiable information (PII) or other forms of personal data.*
 
@@ -152,7 +154,7 @@ A contribution is some event, artifact, or behavior that has been made by some e
 An issuer MAY publish its own data about the Contribution (e.g. `id` information about the contribution) under `externalData`.
 
 #### daoURI Attestations
-An issuer may publish a version of `daoURI` on behalf of a DAO as an attestation. This follows the common pattern whereby an aggregator constructs a profile for a DAO that may then be "claimed". If accompanied by a digital signature or other proof, this MAY be indexed as the DAO's `daoURI` in the sense of [DAOIP-2](daoip-2.md).
+An issuer may publish a version of `daoURI` on behalf of a DAO as an attestation. This follows the common pattern whereby an aggregator constructs a profile for a DAO that may then be "claimed". If accompanied by a digital signature or other proof, this MAY be indexed as the DAO's `daoURI` in the sense of [DAOIP-2](docs\Standards.md\DAOIP-2.md).
 
 ```json
 {
@@ -171,7 +173,7 @@ An issuer may publish a version of `daoURI` on behalf of a DAO as an attestation
 
 ### For DAOs: attestationIssuers
 
-All DAOs conforming to DAOIP-3 MUST implement the `attestationIssuersURI` field as part of `daoURI` as described in [DAOIP-2](daoip-2.md) and/or [EIP-4824](https://eips.ethereum.org/EIPS/eip-4824).
+All DAOs conforming to DAOIP-3 MUST implement the `attestationIssuersURI` field as part of `daoURI` as described in [DAOIP-2](docs\Standards.md\DAOIP-2.md) and/or [EIP-4824](https://eips.ethereum.org/EIPS/eip-4824).
 
 ```json
 {
