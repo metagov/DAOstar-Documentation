@@ -1,0 +1,101 @@
+---
+sidebar_position: 1
+---
+
+
+
+# Adopt EIP-4824
+
+## Introduction
+
+At present, there are over 20,000 DAOs spread across multiple blockchains, governance frameworks, and operational structures. Due to an increase in their complexity and the number of DAO-controlled parameters, collecting essential DAO metadata has become a hard job. The extent of this problem is visible when we look at incomplete data sets in DAO-aggregators, tooling with limited support for different governance frameworks, and the monumental dev work required to integrate a new DAO/DAO framework into a tool. [EIP-4824](https://daostar.one/EIP) addresses these issues.
+
+## What is EIP-4824?
+
+Consider any DAO. To fully understand it, you need information on its governance structure, recent proposals, members, contracts owned, other commissioned activities, etc. At present, this information is scattered across the DAO's Github, documentation, forums and other places. Hence, the process of collecting a DAO's metadata has become a very manual, painstaking process.
+
+We tackle this problem by defining something called a daoURI. A daoURI is essentially a URI (Uniform Resource Identifier) that points to a DAO's metadata. For example, here is the [daoURI of Optimism Collective published by Snapshot](https://hub.snapshot.org/api/eip4824/opcollective.eth). Here is the [daoURI of Unlock DAO published on-chain by the DAO itself.](https://api.daostar.org/immutable/QmPNuPryf8axzDj1kqAQ7wU5VaBUjhM88AyDZpqaTTN2fL)
+
+In short:
+
+1. A daoURI is an identifier that points to necessary information on a DAO
+2. It can be published on-chain as well as off-chain, by the DAO or by other entities like Snapshot, Aragon on behalf of the DAOs they serve.
+
+This is the JSON-LD schema for a daoURI, as defined by EIP-4824:
+
+```jsx
+{
+    "@context": "<http://www.daostar.org/schemas>",
+    "type": "DAO",
+    "name": "<name of the DAO>",
+    "description": "<description>",
+    "membersURI": "<URI>",
+    "proposalsURI": "<URI>",
+    "activityLogURI": "<URI>",
+    "governanceURI": "<URI>",
+    "contractsRegistryURI": "<URI>"
+}
+```
+
+If you revisit the examples above (i.e, [daoURI of Optimism Collective published by Snapshot](https://hub.snapshot.org/api/eip4824/opcollective.eth) and [daoURI of Unlock DAO published on-chain by the DAO](https://api.daostar.org/immutable/QmPNuPryf8axzDj1kqAQ7wU5VaBUjhM88AyDZpqaTTN2fL)), you'll see that these daoURI's follow the schema above.
+
+You'll also notice that some subURI's, for example, proposalsURI is dynamic - it serves an up to date list of proposals.
+
+Note that a DAO may choose to include data outside of the above schema in its daoURI.
+
+In essence, EIP-4824 standardizes DAO data. Keep in mind that it doesn't try to standardize DAOs - only the data about them, making DAOs more transparent and interoperable.
+
+## Who is onboard?
+
+Some of the governance tooling providers that are onboard EIP-4824 include Snapshot, Snapshot X, Aragon, DAODAO (Cosmos), Moloch v2 / DAOHaus, Moloch v3 / DAOHaus, Gnosis Safe, DAOstack, KALI, Q.org, Power Protocol and XDAO.
+
+Some of the DAOs that are onboard EIP-4824 include Optimism Collective, Arbitrum Foundation, ENS DAO, 1inch, ShapeShift, Unlock DAO, and Lodestar Finance.
+
+EIP-4824 was authored and is actively supported by DAOstar. The [DAOstar Roundtable](http://daostar.one/) currently has 90 member organizations, building standards like EIP-4824 and other key public goods for DAOs.
+
+## Adopting EIP-4824 in 2 simple steps
+
+### Step 1: Creating a daoURI for your DAO
+
+As mentioned earlier, daoURI is simply an identifier that supplies DAO data according to the schema we defined above. You may store this on IPFS, on your DAO's Github, use end-points hosted by tools like Snapshot, etc. If you are a DAO, you may be interested in maintaining and publishing your daoURI as trustlessly as possible.
+
+DAOstar's [register page](https://daostar.org/register) will help generate a daoURI for you that automatically gets stored to IPFS.
+
+Once you choose the blockchain and governance framework, and enter the DAO's
+
+ main contract address/ENS name (for example, Mainnet, Snapshot, ens.eth) some of the sub-URIs will automatically get populated. In this case, ENS DAO's proposals are pulled using Snapshot's API and members using Boardroom's API. You may replace these fields with your own subURIs and add any extra info you wish to other fields (for eg, to the description, contracts Registry URI, etc.).
+
+Once you finish customizing, hit register to receive the daoURI: The daoURI hence created is automatically stored to IPFS. Here is the one from the example: https://ipfs.io/ipfs/QmPok89AdMmWFyPGZ5Nd5urfxyC6gcUtELhmnuRbVRKPyD
+
+The daoURI created above is not stored anywhere. As long as it isn't published through one of the ways mentioned below, it will not show up on the [DAOstar explorer](https://daostar.org/explore).
+
+Note that it is not necessary to utilize the method shown above to create a daoURI. As long as your daoURI sticks to the schema defined by EIP-4824, you may create it however you please.
+
+DAOstar has received grants from the Optimism Collective, Arbitrum Foundation, ENS DAO and others to help DAOs onboard to the standard. If you reach out to us, we can potentially help you through the whole process.
+
+### Step 2: Publish the daoURI
+
+daoURI's can technically be published anywhere. They can live on your DAO's documentation, in an endpoint you host, on-chain, etc. However, whenever possible, we advise storing your daoURI on-chain, controlled by the DAO. The rationale behind this:
+
+1. On-chain information availability: daoURI is a primitive that can be used to identify your DAO. It provides a lot of useful context about your organization. Being able to refer to it on-chain enriches information availability and transparency. For example, consider arbitrary transactions from a multi-sig controlled by your DAO. While these transactions show up on indexers like Etherscan, they lack info about the organization behind this multi-sig, or how consensus was achieved to execute this transaction. If there is a daoURI linked to the multi-sig, it greatly improves the information landscape.
+2. Control to the DAO: Being able to supply all essential information, in a decentralized manner is powerful. While tooling providers like Snapshot and Aragon are trustworthy, API endpoints managed by them may not contain the information that exists outside of the tool. Also, for use cases like regulatory dashboards (an opt-in dashboard DAOstar is building with support from the Arbitrum Foundation to help DAOs achieve compliance easily), it is better if the DAO managed its daoURI.
+
+In the rest of this guide, we have assumed that your DAO will publish its daoURI on-chain. Some of the methods you can use are:
+
+- Deploying a registration contract to store your daoURI
+- Using your ENS name
+- Using Ethereum Attestation Service (EAS)
+
+Since all we are trying to do is publish a daoURI on-chain, there may also be other ways to do this. If you are interested in exploring some of these, please reach out to us.
+
+Let us dive into each method above in detail to understand them.
+
+### Adopting EIP-4824 by Deploying a Registration Contract
+
+This pathway for EIP-4824 adoption is presently one of the most utilized. You may refer to these successful EIP-4824 adoption proposals at [1inch Network](https://snapshot.org/#/1inch.eth/proposal/0xc25a02d6520fd69ae98ef10b72f3024db2e710d00d51fbc7c03581710e0b8b7b), [ShapeShift DAO](https://snapshot.org/#/shapeshiftdao.eth/proposal/0xa0961a1710084fa076d2f774dade6fcede92941d0f12d5c3eac0aaeaa6e6a059) or [Unlock Protocol](https://www.tally.xyz/gov/unlock/proposal/88514909609252335816460489315313822288366112768901791852399180053604763902892?chart=2). This route is quite straightforward:
+
+1. Initiate a forum proposal/discussion on EIP-4824 and a potential daoURI for your DAO
+2. Create the daoURI
+3. If the governance proposal passes, execute the transaction below to deploy a registration contract. The registration contracts store your daoURI.
+
+EIP-4824 registration factory contract is deployed to nearly all EVM chains. Its mainnet address is 0x2Dac5DBbF1D024c1E0D9c92D3AeDa7618e15aDd7 (for other chains, see [Contract Registry](../Contract%20Registry.md))
