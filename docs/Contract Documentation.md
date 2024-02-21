@@ -117,23 +117,4 @@ contract EIP4824RegistrationSummoner {
     error EIP4824InterfaceNotSupported();
     ```
 
-## Usage Example
-
-### Registering a New DAO
-
-To register a new DAO and set its metadata URI:
-
-1. Deploy the `EIP4824Index` contract.
-2. Deploy the `EIP4824Registration` template contract.
-3. Deploy the `EIP4824RegistrationSummoner` with references to the index and template.
-4. Use the `summonRegistration` function to create a new DAO registration.
-
-```solidity
-EIP4824RegistrationSummoner summoner = new EIP4824RegistrationSummoner(templateAddress, indexAddress);
-address newDAORegistration = summoner.summonRegistration(
-    "Qm...DaoMetadataURI", // DAO Metadata URI
-    daoManagerAddress // Manager address
-);
-```
-
-This approach leverages the EIP-1167 minimal proxy pattern for cost-efficient deployment and provides a structured method for DAO metadata management, aligning with the EIP-4824 standard.
+git 
