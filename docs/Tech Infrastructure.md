@@ -17,23 +17,23 @@ Metagov Organization Account
 
 Members:
 
--   ipatka@gmail.com
+-   Issac Patka
 
--   ylkk925@gmail.com
+-   Crazy Yuan
 
--   rashmiabbigeri@gmail.com
+-   Rashmi V Abbigeri
 
--   joshua.z.tan@gmail.com
+-   Joshua Tan
 
 ### Build and Deployment Instructions
 
 Navigate to daostar-website folder and run the below commands
 
-npm install
+`npm install`
 
-npm run build
+`npm run build`
 
-npm run start
+`npm run start`
 
 The environment variable for this has been configured with Netlify deployment
 
@@ -62,8 +62,9 @@ Members:
 
 Local:
 
-pip install -r requirements.txt\
-python3 debug.py
+`pip install -r requirements.txt`
+
+`python3 debug.py`
 
 DAOStar API Services Backend
 ----------------------------
@@ -98,13 +99,13 @@ And update the credentials
 Next, navigate to DAOStar/daostar/Implementations/API\
 Run the below commands
 
-npm run install
+`npm run install`
 
-npm run build
+`npm run build`
 
 Type in the stage name prod
 
-npm run deploy
+`npm run deploy`
 
 Navigate to CloudFormation and View Stacks, you should see the status of prod-rest-api-Mystack
 
@@ -123,7 +124,7 @@ Get [Auth_Token] from your TheGraph Dashboard\
 Deployment Access Auth Token:\
 graph auth --product hosted service  [Auth_Token]
 
-Run npm install
+Run `npm install`
 
 Refer to the scripts  in package.json file and run necessary commands
 
@@ -131,9 +132,9 @@ Example:
 
 Deploy to optimism-goerli
 
-npm run build:optimism-goerli
+`npm run build:optimism-goerli`
 
-npm run deploy:optimism-goerli
+`npm run deploy:optimism-goerli`
 
 DAOStar API Swagger 
 ------------------------
