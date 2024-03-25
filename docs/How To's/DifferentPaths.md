@@ -15,15 +15,16 @@ EIP-4824 Adoption involves two main steps:
 ### Step 2: Publishing the DAO URI: 
 - Once a DAO URI is created , it needs to be published so that it can be indexed. The daoURI can be published on-chain as well as off-chain, by the DAO or by other entities on behalf of the DAO. [DAOIP-6](https://github.com/metagov/daostar/blob/main/DAOIPs/daoip-6.md#indexing-priority) defines the indexing priority of different methods. 
 
-The above steps are to ensure that the metadata published for/by/onbehalf of DAO is from a verified source and can be relied upon. The first step, involves collecting and structuring the data and the second step involves publishing, which is essentaily a way to keep the source of information, reliable.
+EIP-4824 ensures the reliability of DAO metadata. As described above, the first step involved in EIP-4824 adoption is collecting and structuring data and the second step involves publishing it, which is essential in verifying the source of information. 
 
-## Methods to create DAO URI
-To become EIP-4824 compliant and effectively manage and share DAO metadata, creating a daoURI is essential and the first step. Here are expanded details on the methods to create a daoURI:
+## Methods to create a daoURI
+To become EIP-4824 compliant and effectively manage and share DAO metadata, creating a daoURI is the first step. Here are expanded details on different methods for creating a daoURI:
 
 ### 1. Python Flask API
 
 - **Overview**: Utilize Python's Flask framework to create a lightweight web server that hosts an API endpoint. This endpoint can dynamically generate and return the daoURI in JSON-LD format for your DAO. This method allows for real-time updating of DAO metadata and can be customized according to specific needs
-- Publishing an API endpoint for the daoURI might require DAO approval, especially if it involves allocating resources or making decisions on how the DAO’s data is accessed publicly. This method has been used by DAOs that prefer to manage their metadata in a more centralized manner or wish to provide dynamic access to their data. It involves creating an endpoint where the daoURI and its associated data can be accessed programmatically.
+
+Publishing an API endpoint may require DAO approval, especially if it involves allocating resources or making decisions on how the DAO’s data is accessed publicly. This method has been used by DAOs that prefer to manage their metadata in a more centralized manner or wish to provide dynamic access to their data. It involves creating an endpoint where the daoURI and associated data can be accessed programmatically.
 
 - **Implementation Steps**:
   1. **Set Up Flask**: Install Flask and set up a basic project structure. Flask is a micro web framework in Python, well-suited for small to medium web applications.
@@ -73,19 +74,18 @@ Example: https://hub.snapshot.org/api/eip4824/opcollective.eth
 - Acquiring an ENS (Ethereum Name Service) name for the daoURI potentially requires DAO approval, depending on the governance structure. This ENS name can then point to the daoURI, making it easier to access the DAO’s information through a human-readable address.
 
 #### 3) EAS Attestations
-- Deploying via Ethereum Attestation Service (EAS) Attestations means using EAS to issue on-chain attestations that link to the DAO’s daoURI. 
+- This method utilizes Ethereum Attestation Service (EAS) to issue onchain attestations containing the DAO's daoURI.
 - This method is akin to notarizing the daoURI on the blockchain, providing a secure and transparent way to verify the DAO’s metadata.
-- This is another way to publish the DAOs information via a relable source.
+- As DAOs do not have methods to interact with EAS, this method is utilized most by DAO Foundations, trusted 3rd parties and others to supply information on the DAO. As this method involves a higher degree of trust, DAOstar will manually ensure the legitimacy of each registration through an allowlist enforced via a resolver contract.  
 
 Steps for Implementation:
 
-1. Access the EIP-4824 Schema on EAS: Navigate to the specific schema for EIP-4824 on the EAS platform. For instance, you can view the schema on Optimism Goerli Bedrock at:
-[EIP-4824 Schema on EAS OP Goerli Network.](https://optimism-goerli-bedrock.easscan.org/schema/view/0x5e7633bad97b4b8e8248b93aa8f9bfa6b905f7eeb70a8b2053b460f0a2d44f1f)
-![image](https://hackmd.io/_uploads/BJ3t00Z3a.png)
+1. Get added to the allowlist: contact Amandeep (_aman@doastar.org_ via email, _amanwithwings_ via TG) or Joshua Tan (_josh@daostar.org_ via email, _thelastjosh_ via TG) to get your organization's wallet added to the allowlist. Only addresses included in the allowlist will be able to make attestations.   
+  
+2. Access the EIP-4824 Schema: Visit the [register page](https://daostar.org/register) on the DAOstar website and toggle to "register via EAS". Fill in _DAO Name_, _daoURI_ and hit Register! Note that you need to connect your wallet on Optimism Mainnet, and be a member of the allowlist to be able to attest:
+![image](https://hackmd.io/_uploads/HyR8nGkyC.png)
 
-2. Create an Attestation for DAO: This involves connecting DAO to EAS and creating an attestation that publishes the DAO URI. This process effectively records your DAO's metadata on the blockchain in association with the EIP-4824 standard. You can start this process at:
-[Publish DAO URI via EAS Attestation.](https://optimism-goerli-bedrock.easscan.org/offchain/attestation/view/0xb6b6157c1a8b3644d7579bf7248434f393cabeb87dfd09f1f01653fe76e6668d)
-![image](https://hackmd.io/_uploads/rypsCAZ36.png)
+Alternatively, you can also attest directly using EAS's front-end interface. This is the [EIP-4824 Schema](https://optimism-sepolia.easscan.org/schema/view/0xf90c716cef83b64e4b9cbf5babeb4ee65662e2081535afd76cad37dde744c2dd), deployed to Optimism Mainnet.
 
 
 #### 4) External Registration Contract
