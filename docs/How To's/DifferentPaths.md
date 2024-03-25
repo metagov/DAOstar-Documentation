@@ -12,7 +12,7 @@ EIP-4824 Adoption involves two main steps:
 ### Step 1: Creating a daoURI (Off-Chain Process): 
 - Prepare, organize and host data about your DAO offchain according to EIP-4824 specifications. This step involves structuring information on your DAO into the daoURI JSON-LD specified by EIP-4824 and hosting a queryable endpoint.
 
-### Step 2: Publishing the DAO URI: 
+### Step 2: Publishing the daoURI: 
 - Once a DAO URI is created , it needs to be published so that it can be indexed. The daoURI can be published on-chain as well as off-chain, by the DAO or by other entities on behalf of the DAO. [DAOIP-6](https://github.com/metagov/daostar/blob/main/DAOIPs/daoip-6.md#indexing-priority) defines the indexing priority of different methods. 
 
 EIP-4824 ensures the reliability of DAO metadata. As described above, the first step involved in EIP-4824 adoption is collecting and structuring data and the second step involves publishing it, which is essential in verifying the source of information. 
@@ -70,8 +70,8 @@ Example: https://hub.snapshot.org/api/eip4824/opcollective.eth
 #### 1) DAOstar Factory Registration Contract
 - Deploying a DAOstar factory registration contract on-chain that includes the DAO’s daoURI involves creating a smart contract that stores the daoURI on the blockchain. This makes the DAO’s metadata publicly accessible and verifiable, ensuring transparency and interoperability.
 
-#### 2) Purchase an ENS Name
-- Acquiring an ENS (Ethereum Name Service) name for the daoURI potentially requires DAO approval, depending on the governance structure. This ENS name can then point to the daoURI, making it easier to access the DAO’s information through a human-readable address.
+#### 2) Set as an ENS Text Record
+- daoURI can be set as an ENS (Ethereum Name Service) text record. Depending on the management of the ENS name, this may require governance approval. 
 
 #### 3) EAS Attestations
 - This method utilizes Ethereum Attestation Service (EAS) to issue onchain attestations containing the DAO's daoURI.
