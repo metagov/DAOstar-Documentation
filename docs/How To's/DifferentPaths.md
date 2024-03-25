@@ -2,19 +2,18 @@
 sidebar_position: 3
 ---
 
-# Different Path Ways for A DAO to become EIP-4824 Compliant
+# Pathways to EIP-4824 Compliance
 
-Understanding the different pathways for a DAO to become compliant with EIP-4824 involves understanding different methods that can be used to complete the steps involved in adoption.
+In this artcile, we'll dive deeper into the technicalities of adopting EIP-4824. 
 
 ## Steps involved in EIP-4824 Adoption 
-EIP-4824 Adoption has two main steps:
+EIP-4824 Adoption involves two main steps:
 
-### 1. Creating DAO URI (Off-Chain Process): 
-- Organize, prepare, and host off-chain data according to the EIP-4824 specifications. 
-This involves structuring the collected information into JSON-LD format according to the schema specified in EIP-4824.and hosting a queryable endpoint.
+### Step 1: Creating a daoURI (Off-Chain Process): 
+- Prepare, organize and host data about your DAO offchain according to EIP-4824 specifications. This step involves structuring information on your DAO into the daoURI JSON-LD specified by EIP-4824 and hosting a queryable endpoint.
 
-### 2. Publish the DAO URI: 
-- Once a DAO URI is created , It needs to be published to be Indexed. It can be published on-chain as well as off-chain, by the DAO or by other entities like DAODAO, Aragon on behalf of the DAOs they serve. 
+### Step 2: Publishing the DAO URI: 
+- Once a DAO URI is created , it needs to be published so that it can be indexed. The daoURI can be published on-chain as well as off-chain, by the DAO or by other entities on behalf of the DAO. [DAOIP-6](https://github.com/metagov/daostar/blob/main/DAOIPs/daoip-6.md#indexing-priority) defines the indexing priority of different methods. 
 
 The above steps are to ensure that the metadata published for/by/onbehalf of DAO is from a verified source and can be relied upon. The first step, involves collecting and structuring the data and the second step involves publishing, which is essentaily a way to keep the source of information, reliable.
 
