@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Pathways to EIP-4824 Compliance
 
-In this artcile, we'll dive deeper into the technicalities of adopting EIP-4824. 
+In this artcle, we'll dive deeper into the technicalities of adopting EIP-4824. 
 
 ## Steps involved in EIP-4824 Adoption 
 EIP-4824 Adoption involves two main steps:
