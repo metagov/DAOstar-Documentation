@@ -76,16 +76,16 @@ Example: https://hub.snapshot.org/api/eip4824/opcollective.eth
 #### 3) EAS Attestations
 - This method utilizes Ethereum Attestation Service (EAS) to issue onchain attestations containing the DAO's daoURI.
 - This method is akin to notarizing the daoURI on the blockchain, providing a secure and transparent way to verify the DAO’s metadata.
-- As DAOs do not have methods to interact with EAS, this method is utilized most by DAO Foundations, trusted 3rd parties and others to supply information on the DAO. As this method involves a higher degree of trust, DAOstar will manually ensure the legitimacy of each registration through an allowlist enforced via a resolver contract.  
+- This method is intended for the usage of  DAO Foundations, OpCo's, working groups and other trusted 3rd parties to supply information on the DAO. As this method involves a higher degree of trust, DAOstar will manually ensure the legitimacy of each registration through an allowlist enforced via a resolver contract.  
 
-Steps for Implementation:
+Instructions:
 
-1. Get added to the allowlist: contact Amandeep (_aman@doastar.org_ via email, _amanwithwings_ via TG) or Joshua Tan (_josh@daostar.org_ via email, _thelastjosh_ via TG) to get your organization's wallet added to the allowlist. Only addresses included in the allowlist will be able to make attestations.   
+1. Get added to the allowlist: Fill this [form](https://forms.gle/24CnDQvyuGj1nLT58) to get added to the allowlist of issuers. Only addresses included in the allowlist will be able to make attestations.   
   
-2. Access the EIP-4824 Schema: Visit the [register page](https://daostar.org/register) on the DAOstar website and toggle to "register via EAS". Fill in _DAO Name_, _daoURI_ and hit Register! Note that you need to connect your wallet on Optimism Mainnet, and be a member of the allowlist to be able to attest:
-![image](https://hackmd.io/_uploads/HyR8nGkyC.png)
+2. Registration: Visit the [register page](https://daostar.org/register) on the DAOstar website and toggle to "Register through EAS". Fill in the required fields. Note that you (the organization that is publishing the daoURI on behalf of the DAO) are the issuer. Hit Register! Note that you need to connect your wallet on Optimism Mainnet, and be a member of the allowlist to be able to attest:
+![image](https://hackmd.io/_uploads/BkAAAvTJC.png)
 
-Alternatively, you can also attest directly using EAS's front-end interface. This is the [EIP-4824 Schema](https://optimism-sepolia.easscan.org/schema/view/0xf90c716cef83b64e4b9cbf5babeb4ee65662e2081535afd76cad37dde744c2dd), deployed to Optimism Mainnet.
+Alternatively, you can also attest directly using EAS's front-end interface. This is the [EIP-4824 Schema](https://optimism.easscan.org/schema/view/0x1b1837dfb994702896d5d19bb0d66cf16ea30d8523765b938ec029088f90f904), deployed to Optimism Mainnet.
 
 
 #### 4) External Registration Contract
