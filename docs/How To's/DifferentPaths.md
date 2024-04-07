@@ -20,7 +20,7 @@ EIP-4824 ensures the reliability of DAO metadata. As described above, the first 
 ## Methods to create a daoURI
 To become EIP-4824 compliant and effectively manage and share DAO metadata, creating a daoURI is the first step. Here are expanded details on different methods for creating a daoURI:
 
-### 1. Python Flask API
+### 1. Self-hosting via Python Flask API 
 
 - **Overview**: Utilize Python's Flask framework to create a lightweight web server that hosts an API endpoint. This endpoint can dynamically generate and return the daoURI in JSON-LD format for your DAO. This method allows for real-time updating of DAO metadata and can be customized according to specific needs
 
@@ -40,7 +40,7 @@ Publishing an API endpoint may require DAO approval, especially if it involves a
 
 ### 2. Generate a DAO URI Using DAOstar Registration Form
 
-- **Overview**: DAOstar offers a registration form that simplifies the process of generating a daoURI. This form guides users through inputting essential DAO information, automatically generating a daoURI that complies with the EIP-4824 schema.
+- **Overview**: DAOstar offers a registration form that simplifies the process of generating a daoURI. This form guides users through inputting essential DAO information, automatically generating a daoURI that complies with the EIP-4824 schema. DAOstar hosts the frontend and backend infrastructure to collect the info of a DAO, upload it to IPFS, and provide a DAO URI link, this link is of the format `https://api.daostar.org/immutable/<CID>`. One could choose to get the CID and use any IPFS gateway for example, ipfs.io, to view the DAO URI.
 
 - **How to Use**:
   1. **Access the DAOstar Register Page**: Navigate to the registration form provided by DAOstar.
@@ -76,11 +76,11 @@ Example: https://hub.snapshot.org/api/eip4824/opcollective.eth
 #### 3) EAS Attestations
 - This method utilizes Ethereum Attestation Service (EAS) to issue onchain attestations containing the DAO's daoURI.
 - This method is akin to notarizing the daoURI on the blockchain, providing a secure and transparent way to verify the DAO’s metadata.
-- This method is intended for the usage of  DAO Foundations, OpCo's, working groups and other trusted 3rd parties to supply information on the DAO. As this method involves a higher degree of trust, DAOstar will manually ensure the legitimacy of each registration through an allowlist enforced via a resolver contract.  
+- This method is intended for the usage of  DAO Foundations, OpCo's, working groups and other trusted 3rd parties to supply information on the DAO. As this method involves a higher degree of trust, DAOstar ensures the legitimacy of each registration through an allowlist enforced via a resolver contract.  
 
 Instructions:
 
-1. Get added to the allowlist: Fill this [form](https://forms.gle/24CnDQvyuGj1nLT58) to get added to the allowlist of issuers. Only addresses included in the allowlist will be able to make attestations.   
+1. Get added to the allowlist: Submit this [form](https://forms.gle/24CnDQvyuGj1nLT58) to get added to the allowlist of issuers. Only addresses included in the allowlist will be able to make attestations.   
   
 2. Registration: Visit the [register page](https://daostar.org/register) on the DAOstar website and toggle to "Register through EAS". Fill in the required fields. Note that you (the organization that is publishing the daoURI on behalf of the DAO) are the issuer. Hit Register! Note that you need to connect your wallet on Optimism Mainnet, and be a member of the allowlist to be able to attest:
 ![image](https://hackmd.io/_uploads/BkAAAvTJC.png)
@@ -107,7 +107,7 @@ Ex: Aragon DAO Framework, ie Aragon OSX Protocol has implemented this.
 
 #### c) DAO Framework with DAO URI Support; Snapshot
 
-- For DAOs using Snapshot, Snapshot publishes an EIP-4824 endpoint essentaily creating DAO URIs for Snapshot DAO:
+- For DAOs using Snapshot, Snapshot publishes an EIP-4824 endpoint essentaily creating DAO URIs for Snapshot DAOs:
 
 ##### https://hub.snapshot.org/api/eip4824/[Snapshot_space_id]
 
