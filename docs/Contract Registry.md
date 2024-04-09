@@ -89,5 +89,7 @@ These contracts are used to register on DAOstar website.
 
 ### EAS Attestations
 
-#### Optimism Goerli
-- [Schema](https://optimism-goerli-bedrock.easscan.org/schema/view/0x5e7633bad97b4b8e8248b93aa8f9bfa6b905f7eeb70a8b2053b460f0a2d44f1f)
+#### Optimism 
+- [Schema UID: 0x1b1837dfb994702896d5d19bb0d66cf16ea30d8523765b938ec029088f90f904](https://optimism.easscan.org/schema/view/0x1b1837dfb994702896d5d19bb0d66cf16ea30d8523765b938ec029088f90f904)
+- [Allowlist Contract: 0xb35AA0cB89eC35f04c30E19B736b8ae1904EC26b](https://optimistic.etherscan.io/address/0xb35AA0cB89eC35f04c30E19B736b8ae1904EC26b)
+-[Resolver Contract: 0xa2e036A22525742d4c887Cf641B422581a51C61A](https://optimistic.etherscan.io//address/0xa2e036A22525742d4c887Cf641B422581a51C61A)
