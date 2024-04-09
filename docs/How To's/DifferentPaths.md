@@ -114,3 +114,5 @@ Ex: Aragon DAO Framework, ie Aragon OSX Protocol has implemented this.
 Ex: https://hub.snapshot.org/api/eip4824/opcollective.eth
 
 - Here, the next step is to publish the DAO URI via one of the listed on-chain publication methods
+
+Note: You can check out our deployed contracts [here](../Contract Registry.md)
