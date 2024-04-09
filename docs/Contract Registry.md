@@ -92,4 +92,4 @@ These contracts are used to register on DAOstar website.
 #### Optimism 
 - [Schema UID: 0x1b1837dfb994702896d5d19bb0d66cf16ea30d8523765b938ec029088f90f904](https://optimism.easscan.org/schema/view/0x1b1837dfb994702896d5d19bb0d66cf16ea30d8523765b938ec029088f90f904)
 - [Allowlist Contract: 0xb35AA0cB89eC35f04c30E19B736b8ae1904EC26b](https://optimistic.etherscan.io/address/0xb35AA0cB89eC35f04c30E19B736b8ae1904EC26b)
--[Resolver Contract: 0xa2e036A22525742d4c887Cf641B422581a51C61A](https://optimistic.etherscan.io//address/0xa2e036A22525742d4c887Cf641B422581a51C61A)
+- [Resolver Contract: 0xa2e036A22525742d4c887Cf641B422581a51C61A](https://optimistic.etherscan.io//address/0xa2e036A22525742d4c887Cf641B422581a51C61A)
