@@ -33,6 +33,7 @@ const sidebars: SidebarsConfig = {
       label: 'Development',
       items: ['Contract Documentation', 'Contract Registry', 'Tech Infrastructure', 'Backend Infrastructure']
     },
+    'socials',
   ],
    
 };
