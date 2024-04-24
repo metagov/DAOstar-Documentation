@@ -1,5 +1,5 @@
 ---
-Sidebar_position: 2
+Sidebar_position: 3
 ---
 
 ## Add new network support for DAOstar

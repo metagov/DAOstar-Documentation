@@ -1,3 +1,6 @@
+---
+Sidebar_position: 4
+---
 # Report an registration instance
 
 To report a DAO registration instance, you can follow these instructions, which will guide you through the process of using the provided issue template on GitHub. This template is designed to gather detailed information about the DAO registration you are reporting, including the reasons for the report, the desired solution, and any additional context that might be relevant.

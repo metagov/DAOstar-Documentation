@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# DAOstar Backend Service (draft)
+# DAOstar Backend Service (WIP)
 
 ## Tech Architecture diagram
 
@@ -90,4 +90,4 @@ Case 1: Snapshot integration.
 
 3\. When DAO members' URI request from the DAO URI API service, get data from the database and respond directly without any process.
 
-Summarize: The combination of DAO URI Data Indexer Service and DAO URI Data Indexer Service constitutes an ERC-4824 custom URI hosted service.
+**TL:DR:** The combination of DAO URI Data Indexer Service and DAO URI Data Indexer Service constitutes an ERC-4824 custom URI hosted service.
