@@ -33,7 +33,13 @@ const sidebars: SidebarsConfig = {
       label: 'Development',
       items: ['Contract Documentation', 'Contract Registry', 'Tech Infrastructure', 'Backend Infrastructure']
     },
+    {
+      type: 'category',
+      label: `DAOIP's`,
+      items: ['DAOIP/1', 'DAOIP/2', 'DAOIP/3', 'DAOIP/4', 'DAOIP/5','DAOIP/6','DAOIP/7']
+    },
     'socials',
+    
   ],
    
 };

@@ -28,3 +28,68 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Main container styling to align with Docusaurus default */
+.markdown-container {
+  padding: 20px;
+  background-color: #e7e7e7; /* Neutral background */
+  border-radius: 8px; /* Soft rounded corners for the container */
+  margin: 20px auto; /* Centrally align and add vertical margin */
+  max-width: 1000px; /* Max width for content readability */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  font-family: sans-serif; /* Consistent with Docusaurus default */
+  width: 80%; /* Responsive width */
+}
+
+/* Header styles to match Docusaurus defaults */
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3,
+.markdown-container h4 {
+  color: #333; /* Dark grey for clear visibility */
+  border-bottom: 1px solid #eee; /* Subtle separator */
+  padding-bottom: 10px; /* Space below headers */
+}
+
+/* Paragraph styles for uniform text appearance */
+.markdown-container p {
+  line-height: 1.6; /* Adequate line spacing for readability */
+  color: #4a4a4a; /* Slightly lighter than pure black for ease on the eyes */
+}
+
+/* Link styling for interactive elements */
+.markdown-container a {
+  color: #0056b3; /* Docusaurus default link color */
+  text-decoration: none; /* No underline to start */
+}
+
+.markdown-container a:hover {
+  text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .markdown-container {
+    width: 95%; /* Allow more width in constrained space */
+    margin: 10px auto; /* Adjust margin to be more space-efficient */
+    padding: 15px; /* Adjust padding for better touch interaction */
+  }
+}
+
+/* Metadata styling to distinguish from main content */
+.markdown-container .metadata {
+  background-color: #eef0f1; /* Lighter than main content for distinction */
+  border-left: 4px solid #696969; /* Accent color from Docusaurus palette */
+  padding: 10px 20px; /* Comfortable internal spacing */
+  margin: 20px 0; /* Separate metadata from main content */
+  font-family: monospace; /* Distinct typography for metadata */
+  color: #333; /* Consistent text color */
+  font-size: 0.9em; /* Slightly smaller text to differentiate */
+}
+
+.markdown-container .metadata p {
+  margin: 5px 0; /* Tighter paragraph spacing within metadata */
+}
+
+
+

@@ -1,4 +1,5 @@
 import {themes as prismThemes} from 'prism-react-renderer';
+import Link from '@docusaurus/Link';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -77,6 +78,7 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        
       ],
     },
     footer: {
