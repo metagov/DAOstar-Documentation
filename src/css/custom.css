@@ -34,8 +34,8 @@
   padding: 20px;
   background-color: #e7e7e7; /* Neutral background */
   border-radius: 8px; /* Soft rounded corners for the container */
-  margin: 20px auto; /* Centrally align and add vertical margin */
-  max-width: 1000px; /* Max width for content readability */
+  margin: 0 0; /* Centrally align and add vertical margin */
+  max-width: 1200px; /* Max width for content readability */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
   font-family: sans-serif; /* Consistent with Docusaurus default */
   width: 80%; /* Responsive width */
