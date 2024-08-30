@@ -56,6 +56,15 @@ These contracts are used to register on DAOstar website.
 * **EIP4824RegistrationSummoner** (Entry Point)
     * Contract: [0x3271B3479f7485DAdB2bD5FFF43EEb4367B1a91a](https://goerli.etherscan.io/address/0x3271b3479f7485dadb2bd5fff43eeb4367b1a91a)
     * Version: N/A
+ #### Ethereum-Sepolia
+* **EIP4824Index**:
+    * Contract: [0xD4d107a57fddaF6A21d7D7d1411602F943e08caA](https://sepolia.etherscan.io/address/0xD4d107a57fddaF6A21d7D7d1411602F943e08caA)
+* **EIP4824Registration**
+    * Contract: [0x9411FEC18882fE55235cd93e304D7438aD5a99b6](https://sepolia.etherscan.io/address/0x9411FEC18882fE55235cd93e304D7438aD5a99b6)
+    * Version: N/A
+* **EIP4824RegistrationSummoner** (Entry Point)
+    * Contract: [0x94eBB083b3e6c346A5115c54Ef0EA1125ED1377d](https://sepolia.etherscan.io/address/0x94eBB083b3e6c346A5115c54Ef0EA1125ED1377d)
+    * Version: N/A
 #### Optimism-goerli
 * **EIP4824Index**:
     * Contract: [0x9aff4e5e7a7ae449b89162ef4798b2bb60dc92c0](https://goerli-optimism.etherscan.io/address/0x9aff4e5e7a7ae449b89162ef4798b2bb60dc92c0)
