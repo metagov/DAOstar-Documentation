@@ -64,12 +64,7 @@ Publishing an API endpoint may require DAO approval, especially if it involves a
 
 Example: https://hub.snapshot.org/api/eip4824/opcollective.eth
 
-### 4. Host you JSON-LD on Github
-Got it! Here's the structured instruction for **Hosting DAO-URI via GitHub**:
-
----
-
-### 3. Host DAO-URI via GitHub
+### 4. Host your JSON-LD on Github
 
 - **Overview**: Hosting your `daoURI.json` on GitHub is a simple and accessible method for making your DAO metadata publicly available. By using GitHub, you can ensure that your `daoURI` is easily accessible and can be shared with others, while also providing version control and transparency through GitHub's infrastructure. This method is perfect for maintaining a simple, transparent, and publicly accessible `daoURI` without needing a decentralized storage solution like IPFS.
 
