@@ -38,7 +38,7 @@
   max-width: 1200px; /* Max width for content readability */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
   font-family: sans-serif; /* Consistent with Docusaurus default */
-  width: 80%; /* Responsive width */
+  width: 100%; /* Responsive width */
 }
 
 /* Header styles to match Docusaurus defaults */
