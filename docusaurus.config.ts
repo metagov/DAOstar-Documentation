@@ -119,8 +119,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} DAOstar by MetaGov. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.oneLight,
-      darkTheme: prismThemes.duotoneDark,
+      theme: prismThemes.github,
+      darkTheme: prismThemes.oneDark,
     },
   } satisfies Preset.ThemeConfig,
 };
