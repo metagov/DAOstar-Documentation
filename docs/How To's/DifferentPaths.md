@@ -64,6 +64,65 @@ Publishing an API endpoint may require DAO approval, especially if it involves a
 
 Example: https://hub.snapshot.org/api/eip4824/opcollective.eth
 
+### 4. Host your DAO URI on Github
+
+- **Overview**: Hosting your `daoURI.json` on GitHub is a simple and accessible method for making your DAO metadata publicly available. By using GitHub, you can ensure that your `daoURI` is easily accessible and can be shared with others, while also providing version control and transparency through GitHub's infrastructure. This method is perfect for maintaining a simple, transparent, and publicly accessible `daoURI` without needing a decentralized storage solution like IPFS.
+
+- **Steps**:
+
+  1. **Clone Your Repository**:
+     - Clone the repository where you will store the `daoURI.json` file.
+       ```sh
+       git clone <your-github-repo-url>
+       ```
+
+  2. **Modify or Add the JSON File**:
+     - Create or modify a file in the repository (e.g., `daoURI.json`).
+     - Define your DAO's metadata using the EIP-4824 schema:
+       ```json
+       {
+           "@context": "http://www.daostar.org/schemas",
+           "type": "DAO",
+           "name": "<name of the DAO>",
+           "description": "<description>",
+           "membersURI": "<URI>",
+           "proposalsURI": "<URI>",
+           "activityLogURI": "<URI>",
+           "governanceURI": "<URI>",
+           "contractsRegistryURI": "<URI>"
+       }
+       ```
+
+  3. **Commit the Changes**:
+     - After modifying or adding the file, commit your changes with a descriptive message:
+       ```sh
+       git commit -m "Added DAO URI JSON-LD file"
+       ```
+
+  4. **Push to GitHub**:
+     - Push the changes to your GitHub repository:
+       ```sh
+       git push
+       ```
+
+  5. **Access the JSON-LD File**:
+     - Once the file is in your GitHub repository, it will have a publicly accessible URL, something like:
+       ```
+       https://raw.githubusercontent.com/<your-github-username>/<repository-name>/main/daoURI.json
+       ```
+     - This link can be shared as your DAO's URI.
+
+  6. **(Optional) Use GitHub Pages**:
+     - For a more user-friendly URL, you can enable GitHub Pages in your repository settings. This will provide a direct web link to your `daoURI.json`:
+       ```
+       https://<your-github-username>.github.io/<repository-name>/daoURI.json
+       ```
+
+- **Key Benefits**:
+  1. **Simple and Accessible**: GitHub provides an easy-to-use platform for hosting the `daoURI.json` file, making it suitable even for non-technical users.
+  2. **Version Control**: GitHub's version control system allows for tracking changes made to the `daoURI.json` over time, ensuring transparency and auditability.
+  3. **Publicly Accessible**: Once hosted, the `daoURI` can be accessed from anywhere, allowing it to be integrated into your DAO's governance framework or shared with external parties.
+  4. **Cost-Free**: Hosting on GitHub is free, making it an economical option for DAOs of all sizes.
 
 ## Methods to publish DAO URI
 
