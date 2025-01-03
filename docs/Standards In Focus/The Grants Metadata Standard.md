@@ -40,3 +40,5 @@ Imagine a developer wants to apply for funding from three DAOs—Gitcoin, Optimi
 
 DAOIP-5 simplifies grants management for DAOs, fostering better collaboration and transparency. By creating a common language for grants data, it helps DAOs and grant recipients achieve their goals more effectively.
 
+### How to Adopt?
+TBD
