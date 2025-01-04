@@ -29,7 +29,7 @@ DAOstar focuses on fostering the growth of the DAO ecosystem through a deliberat
 
 Some of our efforts have focused on data infrastructure DAOs, regulatory interoperability, grants management, and attestation infrastructure. For more current details, visit our most recent roadmap: 
 - [The plans for DAOstar (2024)](https://github.com/metagov/daostar/discussions/183)
-- [The plans for DAOstar (2023)]()
+- [The plans for DAOstar (2023)](https://github.com/metagov/daostar/discussions/53)
 
 ### Support
 
