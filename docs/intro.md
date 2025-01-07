@@ -4,41 +4,35 @@ slug: /
 description: DAOstar Docs Intro
 title: Introduction
 ---
-# Introduction
-## Overview
+# What is DAOstar?
 
-DAO* (or DAOstar) defines a common interface for DAOs, akin to tokenURI for NFTs, so that DAOs of all shapes and sizes are easier to discover, more legible to their members, and more compatible with future tooling.
+DAOstar is the standards body of the DAO ecosystem. We build and maintain interoperable frameworks that empower decentralized autonomous organizations (DAOs) and related entities across the Web.
 
-Many DAOs already publish their data in various ways. We've standardized these existing best-practices, making it easy for people to create and maintain new DAOs and DAO tooling.
+Many of our standards, starting with EIP-4824 (a.k.a. DAOIP-2), focus on defining a common interface for DAOs, similar to how tokenURI functions for NFTs. By setting consistent metadata protocols for DAOs of all types, DAOstar enhances their discoverability, improves transparency for members, and ensures compatibility with future tools and services.
 
-
-- **[TODO]** The objective of building interoperable standards and public infrastructure for DAOs.
+While many DAOs already publish operational data in various formats, DAOstar formalizes and standardizes these practices, making it simpler to create, manage, and maintain DAOs and the tools that support them.
 
 ### Mission
 
-The mission of DAOstar is to support the long-term success and sustainability of the DAO ecosystem including DAOs, DAO members, and DAO service providers. We aim to do this by
+The mission of DAOstar is to support the long-term success and sustainability of the DAO ecosystem including DAOs, DAO participants, and DAO service providers. We do this by
 
-(1) building technical standards for the DAO ecosystem
-(2) building, organizing, and funding public goods for the DAO ecosystem
-(3) setting and securing the long-term vision and leadership for the DAO ecosystem, i.e. someone needs to be thinking what DAOs will be doing 10 years down the line
+(1) developing technical standards that unify and strengthen the DAO ecosystem,
+(2) building, organizing, and funding public goods that benefit DAO communities, and
+(3) setting long-term vision and cultivating leaders to guide the DAO ecosystem into the future, ensuring a clear path for growth and adaptation over the next decade.
 
 ### Vision
-The vision of DAOstar is a world where DAOs and other digitally-constituted organizations become the worldwide norm for commercial and community governance. In particular, we envision a world where DAOs organize more assets and production than traditional, legal organizations.
+DAOstar envisions a future where DAOs and other digitally-constituted organizations become the global standard for governance in both commercial and community contexts. Our goal is a world where DAOs manage [more assets and production than traditional legal entities](https://mirror.xyz/thelastjosh.eth/KJVBCZhszM3Gl6VkMMcxKsR47au0xtt-dlcvZ644yKg).
 
 ### Strategy
 
-The strategy of DAOstar is focused on growing the DAO ecosystem. Generally, we emphasize long-term growth and impact through standards development and research.
+DAOstar focuses on fostering the growth of the DAO ecosystem through a deliberate emphasis on long-term impact. We build standards, publish research, organize events, and operate or fund a variety of public goods relevant to DAO communities.
 
-With respect to standards, DAOstar's staff (led by Metagov) makes independent commitments to specific standards based on our strategic evaluation of what the industry needs to grow. In this case, we are making bets on **regulatory interoperability** (making it easier for DAOs to comply with regulations), on **attestations infrastructure** (making attestations about DAOs and DAO members more interoperable and discoverable), and on **grants management** (making it easier for DAOs to get and give grants). We are also working to **extend DAO infrastructure and metadata** to cover non-crypto use-cases such as open-source communities.
+Some of our efforts have focused on data infrastructure DAOs, regulatory interoperability, grants management, and attestation infrastructure. For more current details, visit our most recent roadmap: 
+- [The plans for DAOstar (2024)](https://github.com/metagov/daostar/discussions/183)
+- [The plans for DAOstar (2023)](https://github.com/metagov/daostar/discussions/53)
 
-In the short term, we would like to do more to help companies and DAOs survive the downturn by promoting DAO use-cases and organizing reports to investors, though we do not currently have the operational capacity to do this on top of our standards work.
+### Support
 
-See our [roadmap](https://www.notion.so/Roadmap-2898a6d4e3534d39a3a733a83e897207?pvs=21) for more
+DAOstar's work is supported by a wide range of entities in and beyond Web3, including the Optimism Foundation, the Ethereum Foundation, the EU's Horizons 2020, Arbitrum DAO, Aragon, Gnosis DAO, Radicle, Metacartel Ventures, NEAR, and Olympus DAO.
 
-### Funding and Sustainablity
-
-Sustainability is a critical question for both DAOstar and the DAO ecosystem. DAOstar's current funding is largely supported by grants from large L2s (e.g. Optimism, Arbitrum) and by research grants (e.g. from the EU). We were previously funded by a small (~100k USD) co-funding round from Ethereum Foundation, Aragon, Gnosis, Radicle, Metacartel Ventures, NEAR, and Olympus DAO.
-
-About 30% of our budget is spent on EIP-4824 adoption and infrastructure. About 30% of our budget is spent on writing and supporting other standards, typically built on top of EIP-4824. About 20% of our budget is spent on operations (including membership and grant raising). About 20% of our budget is spent on education and events, including the roundtable, newsletters, and workshops.
-
-See [Grants & Funding](https://www.notion.so/e03a6dbec6094d3d9fb83849ef6c26d2?pvs=21) for more.
+As a nonprofit, public goods organization, our expenses are hosted publicly on [Open Collective](https://opencollective.com/daostar). We are fiscally sponsored by [Metagov](https://metagov.org).
