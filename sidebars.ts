@@ -35,6 +35,15 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Standards In Focus',
+      items: [
+        'Standards In Focus/The DAO API',
+        'Standards In Focus/The Grants Metadata Standard',
+        'Standards In Focus/What are Standards',
+      ],
+    },
+    {
+      type: 'category',
       label: `DAOIP's`,
       items: ['DAOIP/1', 'DAOIP/2', 'DAOIP/3', 'DAOIP/4', 'DAOIP/5','DAOIP/6','DAOIP/7']
     },
