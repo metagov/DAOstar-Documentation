@@ -18,6 +18,7 @@ const sidebars: SidebarsConfig = {
   
   tutorialSidebar: [
     'intro',
+    'OpenGrants',
     {
       type: 'category',
       label: `How To's`,
@@ -45,7 +46,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: `DAOIP's`,
-      items: ['DAOIP/1', 'DAOIP/2', 'DAOIP/3', 'DAOIP/4', 'DAOIP/5','DAOIP/6','DAOIP/7']
+      items: ['DAOIP/1', 'DAOIP/2', 'DAOIP/3', 'DAOIP/4', 'DAOIP/5','DAOIP/x-5','DAOIP/6','DAOIP/7','DAOIP/8','DAOIP/9'],
     },
     'socials',
     
